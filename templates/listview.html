@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listview</title>
+</head>
+<body>
+    <center>
+        <h2>listview</h2>
+        <h1>Student</h1>
+        <table border="5px" cellspacing="10px" cellpadding="10px">
+            <tr>
+                <th>sid</th>
+                <th>sname</th>
+                <th>sage</th>
+                <th>smail</th>
+            </tr>
+            {% for so in slist %}
+            <tr>
+                <th>{{so.sid}}</th>
+                <th>{{so.sname}}</th>
+                <th>{{so.sage}}</th>
+                <th>{{so.smail}}</th>
+            </tr>
+
+            {% endfor %}
+
+        </table>
+    </center>
+</body>
+</html>
